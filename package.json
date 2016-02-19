@@ -1,0 +1,23 @@
+{
+  "name": "framework-express-policy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gongxiancao/framework-express-policy.git"
+  },
+  "author": "gongxiancao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gongxiancao/framework-express-policy/issues"
+  },
+  "homepage": "https://github.com/gongxiancao/framework-express-policy#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "lodash": "^4.5.0"
+  }
+}
