@@ -42,12 +42,14 @@ module.exports = function (done) {
       });
 
       var unknownPolicies = [];
-      self.controllerActionPolicies = _.map(self.config.controllerActionPolicies, function (policyName) {
-        var policy = self.policies[policyName];
-        if(!policy) {
-          unknownPolicies.push(policyName);
-        }
-        return policy;
+      self.controllerActionPolicies = _.mapValues(self.config.controllerActionPolicies, function (policyNames) {
+        return _.map(policyNames, function (policyName) {
+          var policy = self.policies[policyName];
+          if(!policy) {
+            unknownPolicies.push(policyName);
+          }
+           return policy;
+        });
       });
 
       if(unknownPolicies.length) {
