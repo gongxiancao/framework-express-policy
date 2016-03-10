@@ -53,7 +53,7 @@ module.exports = function (done) {
       });
 
       if(unknownPolicies.length) {
-        return done(new Error('Unknown policy:' + policyName));
+        return done(new Error('Unknown policy:' + unknownPolicies.join(',')));
       }
       done();
     });
