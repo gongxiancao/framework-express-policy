@@ -1,9 +1,10 @@
 var _ = require('lodash'),
   fs = require('fs'),
   async = require('async'),
+  Promise = require('bluebird'),
   pathUtil = require('path');
 
-module.exports = function (done) {
+function lift (done) {
   var self = this;
 
   var policies = self.policies = {};
@@ -58,4 +59,6 @@ module.exports = function (done) {
       done();
     });
   });
-};
+}
+
+module.exports = Promise.promisify(lift);
