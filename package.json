@@ -1,5 +1,5 @@
 {
-  "name": "framework-express-policy",
+  "name": "ofa-express-policy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gongxiancao/framework-express-policy.git"
+    "url": "git+https://github.com/gongxiancao/ofa-express-policy.git"
   },
   "author": "gongxiancao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gongxiancao/framework-express-policy/issues"
+    "url": "https://github.com/gongxiancao/ofa-express-policy/issues"
   },
-  "homepage": "https://github.com/gongxiancao/framework-express-policy#readme",
+  "homepage": "https://github.com/gongxiancao/ofa-express-policy#readme",
   "dependencies": {
     "async": "^1.5.2",
     "bluebird": "^3.3.5",
